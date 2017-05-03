@@ -22,26 +22,13 @@ useradd -m -g wheel -s /bin/bash $USER
 passwd $USER
 echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
-pacman --noconfrim --needed -R vte3
+pacman -S vte3-ng
 pacman --noconfirm --needed -S base-devel xorg-xinit xorg-server termite feh ffmpeg pulseaudio pulseaudio-alsa arandr pavucontrol pamixer mpv wget rofi python-pip vim w3m ranger mediainfo poppler highlight tmux calcurse htop libqalculate newsbeuter moc network-manager-applet networkmanager firefox qutebrowser imagemagick transmission-cli atool libcaca xcompmgr transset-df blender pinta gimp texlive-most texlive-lang markdown mupdf evince audacity vim-latexsuite rsync youtube-dl youtube-viewer openssh syncthing noto-fonts-cjk noto-fonts-emoji cups screenfetch scrot unzip unrar biber ntfs-3g deepin-terminal zip irssi rdesktop nautilus
 
 systemctl enable NetworkManager
 systemctl start NetworkManager
 
 pip install netifaces psutil
-
-#wget https://aur.archlinux.org/cgit/aur.git/snapshot/packer.tar.gz
-#tar -xvzf packer.tar.gz
-#cd packer
-#makepkg --noconfirm -si
-#cd ..
-#rm -rf packer/
-#rm packer.tar.gz
-
-#packer --noconfirm -S cli-visualizer neomutt i3-gaps ttf-font-awesome vim-pathogen vim-live-latex-preview projectm-pulseaudio taffy neofetch i3lock tamzen-font-git speedometer nodejs-markdown-pdf
-
-
-
 
 
 cp user_setup2.sh /home/$USER/user_setup2.sh
