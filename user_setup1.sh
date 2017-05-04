@@ -8,6 +8,6 @@ cd ..
 rm -rf packer/
 rm packer.tar.gz
 # install required aurs
-packer --noconfirm -S cli-visualizer neomutt i3-gaps ttf-font-awesome vim-pathogen vim-live-latex-preview projectm-pulseaudio taffy neofetch i3lock tamzen-font-git speedometer nodejs-markdown-pdf lightdm-slick-greeter nomachine-enterprise-client
+packer --noconfirm -S cli-visualizer neomutt i3-gaps ttf-font-awesome vim-pathogen vim-live-latex-preview projectm-pulseaudio taffy neofetch i3lock tamzen-font-git speedometer nodejs-markdown-pdf lightdm-slick-greeter nomachine-enterprise-client discord vmware-horizon-client
 # run rsync for config files
 bash user_setup2.sh
