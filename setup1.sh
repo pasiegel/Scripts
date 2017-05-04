@@ -23,8 +23,9 @@ passwd $USER
 echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
 pacman -S vte3-ng
-pacman --noconfirm --needed -S base-devel xorg-xinit xorg-server termite feh ffmpeg pulseaudio pulseaudio-alsa arandr pavucontrol pamixer mpv wget rofi python-pip vim w3m ranger mediainfo poppler highlight tmux calcurse htop libqalculate newsbeuter moc network-manager-applet networkmanager firefox qutebrowser imagemagick transmission-cli atool libcaca xcompmgr transset-df blender pinta gimp texlive-most texlive-lang markdown mupdf evince audacity vim-latexsuite rsync youtube-dl youtube-viewer openssh syncthing noto-fonts-cjk noto-fonts-emoji cups screenfetch scrot unzip unrar biber ntfs-3g deepin-terminal zip irssi rdesktop nautilus
+pacman --noconfirm --needed -S base-devel xorg-xinit xorg-server termite feh ffmpeg pulseaudio pulseaudio-alsa arandr pavucontrol pamixer mpv wget rofi python-pip vim w3m ranger mediainfo poppler highlight tmux calcurse htop libqalculate newsbeuter moc network-manager-applet networkmanager firefox qutebrowser imagemagick transmission-cli atool libcaca xcompmgr transset-df blender pinta gimp texlive-most texlive-lang markdown mupdf evince audacity vim-latexsuite rsync youtube-dl youtube-viewer openssh syncthing noto-fonts-cjk noto-fonts-emoji cups screenfetch scrot unzip unrar biber ntfs-3g deepin-terminal zip irssi rdesktop nautilus openssh
 
+systemctl enable sshd
 systemctl enable NetworkManager
 systemctl start NetworkManager
 
